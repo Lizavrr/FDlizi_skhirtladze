@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fdlizaa.FavouriteController">
+
+    <Label layoutX="30" layoutY="20" style="-fx-font-size: 28px; -fx-font-weight: bold;" text="Favourites❤" />
+
+    <Button layoutX="745.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackHome" style="-fx-background-color: transparent;">
+        <graphic>
+            <ImageView fitHeight="35" fitWidth="35" preserveRatio="true">
+                <image>
+                    <Image url="@../backHome.PNG" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="30" layoutY="70" prefHeight="500" prefWidth="740">
+        <FlowPane fx:id="favouriteBox" hgap="20" prefWrapLength="700" style="-fx-padding: 10;" vgap="20">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#DominosPizzaMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../DominosPizza.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#mcdonaldsMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../McDonalds.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#wendysMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Wendys.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#burgerkingMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../BurgerKing.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#kfcMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../KFC.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#dunkinMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Dunkin.PNG" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" onDragDetected="#MacshaurmaMenu" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../MacShaurma.PNG" />
+                    </image>
+                </ImageView>
+            </children>
+        </FlowPane>
+    </ScrollPane>
+
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="920.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fdlizaa.CartController">
+    <children>
+        <ImageView fitHeight="920.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="false">
+            <image>
+                <Image url="@../Cart.jpg" />
+            </image>
+        </ImageView>
+        <VBox fx:id="cartItemsVBox" layoutX="374.0" layoutY="282.0" prefHeight="419.0" prefWidth="521.0" spacing="12" />
+        <Button fx:id="backButton" layoutX="347.0" layoutY="714.0" onAction="#backtoHome" prefHeight="68.0" prefWidth="275.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="sendOrderButton" layoutX="646.0" layoutY="714.0" onAction="#SendOrder" prefHeight="68.0" prefWidth="275.0" style="-fx-background-color: transparent;" />
+        <Label layoutX="76.0" layoutY="559.0" text="Promocode">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="promoField" layoutX="54.0" layoutY="589.0" prefHeight="30.0" prefWidth="154.0" />
+        <Button fx:id="applyPromo" layoutX="106.0" layoutY="628.0" mnemonicParsing="false" onAction="#applyPromo" text="Enter">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Label fx:id="totalPriceLabel" layoutX="921.0" layoutY="218.0" prefHeight="36.0" prefWidth="132.0">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font></Label>
+        <Label fx:id="promoStatusLabel" layoutX="14.0" layoutY="674.0" prefHeight="27.0" prefWidth="317.0" />
+    </children>
+</AnchorPane>

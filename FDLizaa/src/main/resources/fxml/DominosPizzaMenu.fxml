@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="920.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fdlizaa.DominosPizzaMenu">
+   <children>
+      <ImageView fitHeight="920.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../DominosPizzaMenu.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="backBTN" layoutX="23.0" layoutY="809.0" mnemonicParsing="false" onAction="#backtoHome" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../backBTN.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <ImageView fx:id="plusButton1" fitHeight="26.0" fitWidth="60.0" layoutX="393.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton2" fitHeight="26.0" fitWidth="60.0" layoutX="725.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton3" fitHeight="26.0" fitWidth="60.0" layoutX="403.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton4" fitHeight="26.0" fitWidth="60.0" layoutX="725.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton5" fitHeight="26.0" fitWidth="60.0" layoutX="403.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton6" fitHeight="26.0" fitWidth="60.0" layoutX="725.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton7" fitHeight="26.0" fitWidth="60.0" layoutX="403.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton8" fitHeight="26.0" fitWidth="60.0" layoutX="725.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton9" fitHeight="26.0" fitWidth="60.0" layoutX="403.0" layoutY="829.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton10" fitHeight="26.0" fitWidth="60.0" layoutX="725.0" layoutY="829.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton11" fitHeight="26.0" fitWidth="60.0" layoutX="1157.0" layoutY="828.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton12" fitHeight="26.0" fitWidth="60.0" layoutX="1180.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton13" fitHeight="26.0" fitWidth="60.0" layoutX="1180.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="plusButton14" fitHeight="26.0" fitWidth="60.0" layoutX="1180.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="messageLabel" layoutX="959.0" layoutY="26.0" prefHeight="33.0" prefWidth="238.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="1179.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToCart" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../cart.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      
+   </children>
+</AnchorPane>
